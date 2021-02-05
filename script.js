@@ -6,8 +6,7 @@ const svg = d3.select('svg');
 // which will contain everything within the SVG
 // we can transform it to make things everything zoomable
 const containerG = svg.append('g').classed('container', true);
-let mapData, popData, hexbinPopData;
-let radiusScale, projection, hexbin;
+let mapData, popData, projection, hexbin;
 
 svg.attr('width', size.w)
     .attr('height', size.h);
